@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Informe os seus dados para confirmar a sua categoria </p>
+    <script>
+let opc = prompt("Digite 1 para a corrida e 2 para a natação.")
+
+if (opc == "1") {
+    document.write("corrida<br>")
+    let nome = prompt("Digite seu nome.")
+    let sexo = prompt("Informe o sexo.")
+    let idade = parseInt(prompt("Digite a sua idade."))
+if (idade <= 7) {
+    document.write("Idade:"+idade+" Categoria: Leite<br>")
+} else {
+    document.write("Idade: "+idade+" Categoria: Juvenil")
+}
+
+} else {
+    document.write("Natação<br>")
+   let nome = prompt("Digite seu nome.")
+   let sexo = prompt("Informe o sexo.")
+   let idade = parseInt(prompt("Digite a sua idade"))
+ if (idade <= 7) {
+    document.write("Idade: "+idade+" Categoria: Leite<br>")    
+ } else {
+    document.write("Idade: "+idade+" Categoria: Juvenil<br>")
+ }
+}
+
+
+    </script>
+</body>
+</html>
