@@ -9,22 +9,28 @@
 <body>
     <h1> oi ne </h1>
     <script>
-        let num = 2
+        document.write("escolha uma opção; 1 - cadastro; 2 - notas; 3 - atualizar a data <br>")
+        let opc = parseInt(prompt("Digite a opção escolhida"))
 
-        switch(num) {
-            case 0:
-                console.log("Boa tarde")
-
-                break;
+        switch(opc) {
             case 1:
-                console.log("Estpu feliz")
+                let nome = prompt("Digite o nome do aluno")
+                let idade = parseInt(prompt("digite a idade do aluno"))
+                document.write("Nome:"+nome+"<br>")
+                document.write("Idade:"+idade+"<br>")
+
                 break;
             case 2:
-                console.log("la ele mil vezes")
-                break;
+                let nota1 = parseInt(prompt("digite a primeira nota"))
+                let nota2 = parseInt(prompt("digite a segunda nota"))
+                let soma = nota1 + nota2
+                document.write("Soma:"+soma)
 
+                break;
+            
             default:
-                console.log("Boa noite")
+                console.log("atualizar dados")
+
                 break;
         }
     </script>
